@@ -21,15 +21,15 @@
   "n_M": 9,
   "n_S": 11,
   "inputs_sha256": {
-    "results/processed/PRJDB36442_humann/module_M_vs_S_stats_conservative.tsv": "8c85928c1a1d4a79f33e2a51f0708a49dadf5d4edfc61647df5f4b5e2a956e61",
-    "results/processed/PRJDB36442_humann/module_M_vs_S_stats_expanded.tsv": "dd26cee1317fe0f8f1f789e55c9b9089e10acb8e2be917496afcafc3bcbb985b",
+    "results/processed/PRJDB36442_humann/module_M_vs_S_stats_conservative.tsv": "810a5630e2b2d44e437c21f1fb467137ca90fa2f7008b9532fb0f6dfe0a90c20",
+    "results/processed/PRJDB36442_humann/module_M_vs_S_stats_expanded.tsv": "95a9a5efc70d9fa651aad06ca1f5dc971e39bbb9294ab198a20b27785d29fa71",
     "results/processed/PRJDB36442_humann/module_sets_conservative.tsv": "609eb7ccc7230943f677e9c637a0f1b8313886ce65caccd689ad2830bb289dad",
     "results/processed/PRJDB36442_humann/module_sets_expanded.tsv": "4be4017fe26dd992c7030ebb02bcd25d03fd2c851ed9b6e3d6999b44250fb292",
     "results/processed/PRJDB36442_humann/merged_pathabundance.tsv.gz": "9ff84a3be3d5b49e53b8b8930e1d321d0a2c4764b97b5092cdb9774f3cb0146d"
   },
   "output_pdf": "plots/publication/Figure2_Module_Mechanisms.pdf",
   "output_png": "plots/publication/Figure2_Module_Mechanisms.png",
-  "generated_utc": "2026-02-14T06:45:40.784857+00:00",
+  "generated_utc": "2026-02-14T07:35:46.664077+00:00",
   "software": {
     "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
     "matplotlib": "3.10.8",

@@ -21,7 +21,7 @@
   },
   "output_pdf": "plots/publication/FigureS1_Audit_Traceability.pdf",
   "output_png": "plots/publication/FigureS1_Audit_Traceability.png",
-  "generated_utc": "2026-02-14T06:45:42.022949+00:00",
+  "generated_utc": "2026-02-14T07:35:47.893544+00:00",
   "software": {
     "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
     "matplotlib": "3.10.8",

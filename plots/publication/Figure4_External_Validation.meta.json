@@ -19,12 +19,12 @@
   "module_match_rate": "60.0%",
   "pathway_match_rate": "54.1%",
   "inputs_sha256": {
-    "results/external/module_direction_validation.tsv": "fe74dd3b687d7f5dc8cb843f1b620c9d608f400a9a3755cad42a75f1238b46da",
+    "results/external/module_direction_validation.tsv": "7c165caeeedecfafee52bb2fde5e6494a5838fe670336e266e916e64679d9e08",
     "results/external/pathway_direction_validation.tsv": "507ea8de760437bcc258344f9656e40cb08fca07f3001c0771ff3bc917a1705d"
   },
   "output_pdf": "plots/publication/Figure4_External_Validation.pdf",
   "output_png": "plots/publication/Figure4_External_Validation.png",
-  "generated_utc": "2026-02-14T06:45:41.562500+00:00",
+  "generated_utc": "2026-02-14T07:35:47.433385+00:00",
   "software": {
     "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
     "matplotlib": "3.10.8",

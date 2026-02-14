@@ -86,13 +86,13 @@
     "no_post_hoc_selection": true
   },
   "inputs_sha256": {
-    "results/processed/PRJDB36442_humann/module_M_vs_S_stats_conservative.tsv": "8c85928c1a1d4a79f33e2a51f0708a49dadf5d4edfc61647df5f4b5e2a956e61",
-    "results/external/module_direction_validation.tsv": "fe74dd3b687d7f5dc8cb843f1b620c9d608f400a9a3755cad42a75f1238b46da",
+    "results/processed/PRJDB36442_humann/module_M_vs_S_stats_conservative.tsv": "810a5630e2b2d44e437c21f1fb467137ca90fa2f7008b9532fb0f6dfe0a90c20",
+    "results/external/module_direction_validation.tsv": "7c165caeeedecfafee52bb2fde5e6494a5838fe670336e266e916e64679d9e08",
     "results/external/pathway_direction_validation.tsv": "507ea8de760437bcc258344f9656e40cb08fca07f3001c0771ff3bc917a1705d"
   },
   "output_pdf": "plots/publication/Figure5_Mechanistic_Integration.pdf",
   "output_png": "plots/publication/Figure5_Mechanistic_Integration.png",
-  "generated_utc": "2026-02-14T06:45:41.884551+00:00",
+  "generated_utc": "2026-02-14T07:35:47.755504+00:00",
   "software": {
     "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
     "matplotlib": "3.10.8",

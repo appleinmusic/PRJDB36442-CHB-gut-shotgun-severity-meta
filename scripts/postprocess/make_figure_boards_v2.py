@@ -297,7 +297,9 @@ def _build_module_scores(base_dir: Path, groups: pd.DataFrame, module_set: pd.Da
         picked = [f for f in features if f in rel.index]
         if not picked:
             continue
-        score = rel.loc[picked, valid_runs].mean(axis=0)
+        # Keep the module score definition consistent with the audited analysis tables:
+        # sum of member pathway relative abundances (unstratified, normalized per-sample).
+        score = rel.loc[picked, valid_runs].sum(axis=0)
         for run, value in score.items():
             rows.append({
                 "run_accession": run,

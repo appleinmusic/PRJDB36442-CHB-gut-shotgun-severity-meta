@@ -55,6 +55,12 @@ EXTRA_FILES = [
     "results/repro/repro_check_report_20260208.md",
 ]
 
+MANUSCRIPT_FILES = [
+    "manuscript/manuscript.md",
+    "manuscript/figure_legends.md",
+    "manuscript/references.md",
+]
+
 
 def _sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -141,6 +147,7 @@ def main() -> int:
     out_audit_dir = out_dir / "audit"
     out_docs_dir = out_dir / "docs"
     out_repro_dir = out_dir / "repro"
+    out_manuscript_dir = out_dir / "manuscript"
 
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -216,6 +223,18 @@ def main() -> int:
             {"path": str(dst.relative_to(out_dir)), "sha256": _sha256(dst)}
         )
 
+    # ── Manuscript materials (text-only) ─────────────────────────────────
+    for rel in MANUSCRIPT_FILES:
+        src = base_dir / rel
+        if not src.exists():
+            raise FileNotFoundError(f"Missing required manuscript file: {src}")
+        dst = out_manuscript_dir / Path(rel).name
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+        manifest["included_files"].append(
+            {"path": str(dst.relative_to(out_dir)), "sha256": _sha256(dst)}
+        )
+
     # ── README for humans ────────────────────────────────────────────────
     readme = f"""# Submission Package (meta/PRJDB36442)
 
@@ -229,10 +248,11 @@ Generated (UTC): {manifest['generated_utc']}
 - `audit/`: audit inventories (incl. `_input_checksums.json`)
 - `docs/`: figure governance docs (style guide / benchmark / provenance map)
 - `repro/`: reproducibility bundle (artifact hashes + env snapshot + report)
+- `manuscript/`: draft submission text (Markdown)
 
 ## Notes
-- `_input_checksums.json` lists SHA-256 checksums for the canonical input tables used by the figure generator.
-"""
+    - `_input_checksums.json` lists SHA-256 checksums for the canonical input tables used by the figure generator.
+    """
     _write_text(out_dir / "README_submission.md", readme)
     manifest["included_files"].append(
         {"path": "README_submission.md", "sha256": _sha256(out_dir / "README_submission.md")}
