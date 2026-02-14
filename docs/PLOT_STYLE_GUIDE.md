@@ -6,8 +6,6 @@
 ## 1) Scope
 Applies to all main and supplementary figures for **meta** (Figures 1–5 + FigureS1).
 
-> Note: the ICU target-trial emulation project (“dlfx”) is maintained separately and is intentionally **out of scope** here.
-
 ## 2) Core principles
 - Show raw sample-level evidence whenever possible (points/distributions, not bars alone).
 - Report **effect size + uncertainty** together for primary claims.
