@@ -1,0 +1,32 @@
+{
+  "figure": "FigureS1_Audit_Traceability",
+  "panels": [
+    "a:pipeline_timeline",
+    "b:audit_lollipop"
+  ],
+  "inputs": {
+    "groups": "results/feasibility/PRJDB36442_run_groups.tsv",
+    "artifact_hashes": "results/repro/artifact_hashes.sha256"
+  },
+  "audit_counts": {
+    "External modules checked": 5,
+    "Primary modules tested": 6,
+    "Samples with labels": 20,
+    "Artifacts hashed": 33,
+    "External pathways checked": 366,
+    "Primary pathways tested": 452
+  },
+  "inputs_sha256": {
+    "results/feasibility/PRJDB36442_run_groups.tsv": "b9e1460bd798320b76f8c02086b75d9438e5ff6383772f37097fb80d291c4063"
+  },
+  "output_pdf": "plots/publication/FigureS1_Audit_Traceability.pdf",
+  "output_png": "plots/publication/FigureS1_Audit_Traceability.png",
+  "generated_utc": "2026-02-14T06:45:42.022949+00:00",
+  "software": {
+    "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
+    "matplotlib": "3.10.8",
+    "pandas": "2.3.3",
+    "numpy": "2.4.0",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O"
+  }
+}

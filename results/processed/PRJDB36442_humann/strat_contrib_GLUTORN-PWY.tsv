@@ -1,0 +1,16 @@
+feature	mean_M	mean_S	delta_S_minus_M
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Escherichia.s__Escherichia_coli	0.03134905827972933	0.1425159746220551	0.11116691634232576
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Phascolarctobacterium.s__Phascolarctobacterium_succinatutens	0.0	0.0225856908947656	0.0225856908947656
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Hungatella.s__Hungatella_hathewayi	0.004779165675115948	0.023839684884212255	0.019060519209096308
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Eubacterium.s__Eubacterium_sp_CAG_38	0.004619745711327535	0.02201551840429223	0.017395772692964696
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Streptococcus.s__Streptococcus_thermophilus	0.0	0.015796567427352762	0.015796567427352762
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Flavonifractor.s__Flavonifractor_plautii	0.003469398681570371	0.01893050401061322	0.015461105329042848
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Parasutterella.s__Parasutterella_excrementihominis	0.005038387824795311	0.02030690799381785	0.01526852016902254
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Alistipes.s__Alistipes_finegoldii	0.0027218317756698748	0.014281750627606025	0.01155991885193615
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Enterobacter.s__Enterobacter_bugandensis	0.0	0.009849956757524902	0.009849956757524902
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Roseburia.s__Roseburia_intestinalis	0.022725278815582423	0.03156828464212454	0.00884300582654212
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Prevotella.s__Prevotella_buccae	0.0	0.00840689771522738	0.00840689771522738
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Butyrivibrio.s__Butyrivibrio_crossotus	0.0	0.0064170044097780895	0.0064170044097780895
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Firmicutes_unclassified.s__Firmicutes_bacterium_CAG_65_45_313	0.025607864843570905	0.031232741319667388	0.0056248764760964826
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Eubacterium.s__Eubacterium_sp_CAG_252	0.001223778819999693	0.0065685280649136054	0.005344749244913912
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Anaerostipes.s__Anaerostipes_hadrus	0.002778151750522638	0.007709241100487241	0.004931089349964604

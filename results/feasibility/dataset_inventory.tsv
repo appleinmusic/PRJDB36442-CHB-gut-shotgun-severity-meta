@@ -1,0 +1,3 @@
+project_accession	title	first_public	primary_platform	observed_library_strategy	run_list_accessible	notes	checked_date
+PRJEB64018	HBV and gut microbiome	2025-11-20	PACBIO_SMRT	AMPLICON	yes	ENA 项目可访问且可列出 runs；但库策略显示为 AMPLICON（更像 16S/扩增子），不作为 shotgun 主分析，仅用于预研/流程验证。	2026-02-04
+PRJEB79318	Metagenome-based characterization of the gut bacteriome, mycobiome, and virome in patients with chronic hepatitis B-related liver fibrosis	2024-08-23	unknown	unknown	no	ENA 可查到 study 与 secondary accession（ERP163494）；但通过 ENA API 暂未获取到 read_run/sample/analysis 列表，需要后续进一步核验数据是否可下载与下载方式。	2026-02-04

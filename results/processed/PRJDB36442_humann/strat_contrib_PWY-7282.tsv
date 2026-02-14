@@ -1,0 +1,13 @@
+feature	mean_M	mean_S	delta_S_minus_M
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Bacteroides.s__Bacteroides_ovatus	0.05981616032958265	0.12449341065501579	0.06467725032543314
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Enterobacter.s__Enterobacter_bugandensis	0.0	0.03512231952723988	0.03512231952723988
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Escherichia.s__Escherichia_coli	0.14921574883879068	0.1545086698470809	0.005292921008290208
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Klebsiella.s__Klebsiella_pneumoniae	0.021772004387000533	0.022410649845895733	0.0006386454588951998
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Citrobacter.s__Citrobacter_portucalensis	0.000432587530592766	0.0001424001195470974	-0.00029018741104566866
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Klebsiella.s__Klebsiella_oxytoca	0.0014051732467984042	6.412902592139625e-05	-0.0013410442208770079
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Bacteroides.s__Bacteroides_xylanisolvens	0.033760850052235364	0.03130440228879814	-0.0024564477634372237
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Klebsiella.s__Klebsiella_aerogenes	0.004237937432585719	0.00022619349601061016	-0.004011743936575109
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Haemophilus.s__Haemophilus_parainfluenzae	0.013343114134607665	0.0022223818199047663	-0.011120732314702899
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Haemophilus.s__Haemophilus_sp_HMSC71H05	0.012791487848803665	0.001085032299015975	-0.01170645554978769
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Bacteroides.s__Bacteroides_fragilis	0.023417643191487265	0.01038792126091153	-0.013029721930575736
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II|g__Bacteroides.s__Bacteroides_uniformis	0.6798072930075152	0.6180324898146582	-0.061774803192857

@@ -1,0 +1,6 @@
+OK  scripts/cloud/gcp_patch_humann_metaphlan_compat.sh
+OK  scripts/cloud/gcp_prjdb36442_humann_batch.sh
+OK  scripts/cloud/gcp_submit_prjdb36442_humann_batch.sh
+OK  scripts/cloud/gcp_status_prjdb36442_humann.sh
+OK  scripts/cloud/gcp_fetch_prjdb36442_humann_results.sh
+OK  scripts/cloud/gcp_stop_instance.sh

@@ -1,0 +1,42 @@
+{
+  "figure": "Figure3_Pathway_and_Drivers",
+  "panels": [
+    "a:volcano",
+    "b:top_pathway_heatmap",
+    "c:stratified_drivers",
+    "d:q_distribution"
+  ],
+  "inputs": {
+    "path_stats": "results/processed/PRJDB36442_humann/pathway_M_vs_S_stats.tsv",
+    "pathabundance": "results/processed/PRJDB36442_humann/merged_pathabundance.tsv.gz"
+  },
+  "parameters": {
+    "top_n_volcano_labels": 8,
+    "top_n_heatmap_rows": 20,
+    "strat_contrib_files": [
+      "strat_contrib_ARGSYN-PWY.tsv",
+      "strat_contrib_ARGSYNBSUB-PWY.tsv",
+      "strat_contrib_GLUTORN-PWY.tsv"
+    ],
+    "top_species_driver": 12,
+    "fdr_threshold": 0.25
+  },
+  "filter_rules": {
+    "heatmap_rows": "top 20 pathways by raw p-value",
+    "driver_species": "top 8 by |delta| per pathway, then top 12 overall"
+  },
+  "inputs_sha256": {
+    "results/processed/PRJDB36442_humann/pathway_M_vs_S_stats.tsv": "f6c892c2bf88431b2122f9785e4d073c3f33b2cb749ee9b391b0b8bd8e5ef882",
+    "results/processed/PRJDB36442_humann/merged_pathabundance.tsv.gz": "9ff84a3be3d5b49e53b8b8930e1d321d0a2c4764b97b5092cdb9774f3cb0146d"
+  },
+  "output_pdf": "plots/publication/Figure3_Pathway_and_Drivers.pdf",
+  "output_png": "plots/publication/Figure3_Pathway_and_Drivers.png",
+  "generated_utc": "2026-02-14T06:45:41.321900+00:00",
+  "software": {
+    "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
+    "matplotlib": "3.10.8",
+    "pandas": "2.3.3",
+    "numpy": "2.4.0",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O"
+  }
+}

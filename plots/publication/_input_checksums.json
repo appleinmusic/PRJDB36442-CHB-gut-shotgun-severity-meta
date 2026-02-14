@@ -1,0 +1,13 @@
+{
+  "results/feasibility/PRJDB36442_run_groups.tsv": "b9e1460bd798320b76f8c02086b75d9438e5ff6383772f37097fb80d291c4063",
+  "results/processed/analysis/PRJDB36442/alpha_diversity.tsv": "01ba5b14064dda8c667149db5aa7ae16ce92b4918c4dc3eaf0d5bee236651e25",
+  "results/processed/metaphlan/PRJDB36442/metaphlan_phylum.tsv.gz": "0a3c3e90b2f9e456a37de4a76b0958faf3205b160f40e01db21f0c2d04572ddd",
+  "results/processed/PRJDB36442_humann/module_M_vs_S_stats_conservative.tsv": "8c85928c1a1d4a79f33e2a51f0708a49dadf5d4edfc61647df5f4b5e2a956e61",
+  "results/processed/PRJDB36442_humann/module_M_vs_S_stats_expanded.tsv": "dd26cee1317fe0f8f1f789e55c9b9089e10acb8e2be917496afcafc3bcbb985b",
+  "results/processed/PRJDB36442_humann/module_sets_conservative.tsv": "609eb7ccc7230943f677e9c637a0f1b8313886ce65caccd689ad2830bb289dad",
+  "results/processed/PRJDB36442_humann/module_sets_expanded.tsv": "4be4017fe26dd992c7030ebb02bcd25d03fd2c851ed9b6e3d6999b44250fb292",
+  "results/processed/PRJDB36442_humann/pathway_M_vs_S_stats.tsv": "f6c892c2bf88431b2122f9785e4d073c3f33b2cb749ee9b391b0b8bd8e5ef882",
+  "results/external/pathway_direction_validation.tsv": "507ea8de760437bcc258344f9656e40cb08fca07f3001c0771ff3bc917a1705d",
+  "results/external/module_direction_validation.tsv": "fe74dd3b687d7f5dc8cb843f1b620c9d608f400a9a3755cad42a75f1238b46da",
+  "results/processed/PRJDB36442_humann/merged_pathabundance.tsv.gz": "9ff84a3be3d5b49e53b8b8930e1d321d0a2c4764b97b5092cdb9774f3cb0146d"
+}

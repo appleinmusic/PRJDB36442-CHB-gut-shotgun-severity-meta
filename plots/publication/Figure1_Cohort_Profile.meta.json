@@ -1,0 +1,37 @@
+{
+  "figure": "Figure1_Cohort_Profile",
+  "panels": [
+    "a:cohort_flow",
+    "b:alpha_diversity_raincloud",
+    "c:phylum_composition"
+  ],
+  "inputs": {
+    "groups": "results/feasibility/PRJDB36442_run_groups.tsv",
+    "alpha": "results/processed/analysis/PRJDB36442/alpha_diversity.tsv",
+    "phylum": "results/processed/metaphlan/PRJDB36442/metaphlan_phylum.tsv.gz"
+  },
+  "parameters": {
+    "seed": 20260208,
+    "n_boot": 5000,
+    "alpha_metric": "shannon",
+    "top_phyla": 6,
+    "test": "Mann-Whitney U (two-sided)"
+  },
+  "n_M": 9,
+  "n_S": 11,
+  "inputs_sha256": {
+    "results/feasibility/PRJDB36442_run_groups.tsv": "b9e1460bd798320b76f8c02086b75d9438e5ff6383772f37097fb80d291c4063",
+    "results/processed/analysis/PRJDB36442/alpha_diversity.tsv": "01ba5b14064dda8c667149db5aa7ae16ce92b4918c4dc3eaf0d5bee236651e25",
+    "results/processed/metaphlan/PRJDB36442/metaphlan_phylum.tsv.gz": "0a3c3e90b2f9e456a37de4a76b0958faf3205b160f40e01db21f0c2d04572ddd"
+  },
+  "output_pdf": "plots/publication/Figure1_Cohort_Profile.pdf",
+  "output_png": "plots/publication/Figure1_Cohort_Profile.png",
+  "generated_utc": "2026-02-14T06:45:39.943657+00:00",
+  "software": {
+    "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
+    "matplotlib": "3.10.8",
+    "pandas": "2.3.3",
+    "numpy": "2.4.0",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O"
+  }
+}

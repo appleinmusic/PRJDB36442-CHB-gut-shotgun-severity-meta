@@ -1,0 +1,15 @@
+study_accession	study_title	center_name	first_public	n_runs	shotgun_candidate	strategy_summary	fetch_error	checked_date
+PRJDB36442	Gut Microbiota Links to Histological Damage in Chronic HBV Infection Patients (PRJCA037061)	The First Affiliated Hospital, Zhejiang University School of Medicine	2025-11-16	20	yes	20×RNA-Seq/METAGENOMIC/RANDOM/ILLUMINA		2026-02-04
+PRJDB36443	Gut microbiota from HBV patients Aggravates Fibrosis via Fecal Microbiota Transplantation in Mice (PRJCA037076)	The First Affiliated Hospital, Zhejiang University School of Medicine	2025-11-16	12	no	12×AMPLICON/METAGENOMIC/PCR/ILLUMINA		2026-02-04
+PRJEB62828	Characterization of Gut Microbiota in Patients with Hepatic Diseases (NASH, HBV, ALD).	IHU - Mediterranee Infection	2023-06-05	0	no			2026-02-04
+PRJEB64018	HBV and gut microbiome	THE UNIVERSITY OF HONG KONG	2025-11-20	110	no	110×AMPLICON/METAGENOMIC/Hybrid Selection/PACBIO_SMRT		2026-02-04
+PRJNA1059486	Gut Microbiota in HBV Cirrhosis	Minhang Hospital, Fudan University	2024-01-02	21	no	21×AMPLICON/METAGENOMIC/PCR/ILLUMINA		2026-02-04
+PRJNA1101883	Gut microbiota signatures in patients with minimal hepatic encephalopathy due to HBV-associated cirrhosis	People's Hospital of Ningxia Hui Autonomous Region	2024-04-23	90	no	90×AMPLICON/GENOMIC/PCR/ILLUMINA		2026-02-04
+PRJNA1309012	Gut microbiota and metabolite profiles in HBV cirrhosis with persistent liver enzyme abnormalities	Department of Infectious Diseases, The Second Affiliated Hospital of Chongqing Medical University	2025-09-08	78	no	78×AMPLICON/GENOMIC/PCR/ILLUMINA		2026-02-04
+PRJNA1314935	Intratumoral microbiome evaluated progression and outcome of patients with HBV-associated hepatocellular carcinoma	Anhui Medical University	2025-11-06	55	no	55×OTHER/OTHER/other/ILLUMINA		2026-02-04
+PRJNA512063	HBV infection alters the compostion of gut microbiota	Union Hosipital of Tongji Medical College of Huazhong University of Science and Technology	2019-07-01	37	no	37×AMPLICON/METAGENOMIC/PCR/ILLUMINA		2026-02-04
+PRJNA558158	Gut microbiota of HBV-related disease progression	Xiamen University	2020-02-12	97	no	97×AMPLICON/METAGENOMIC/PCR/ILLUMINA		2026-02-04
+PRJNA778613	Effect of Tenofovir on gut microbiota and inflammatory factors in HBV-infected individuals	Huashan Hospital, Fudan University	2022-03-05	109	no	109×AMPLICON/OTHER/PCR/ILLUMINA		2026-02-04
+PRJNA784025	Changes in Intestinal Microbiota in Patients with Chronic HBV-associated Hepatocellular Carcinoma	Beijing Ditan Hospital, Capital Medical University	2024-05-11	257	no	257×AMPLICON/GENOMIC/PCR/ILLUMINA		2026-02-04
+PRJNA838083	Gut microbiome of HBV-induced liver diseases	South China Normal University	2022-05-16	84	no	84×AMPLICON/METAGENOMIC/PCR/ILLUMINA		2026-02-04
+PRJNA951258	Human gut microbiome study in patient with HCC (HBV, HCV, NBNC) and Healthy	Chulalongkorn university	2024-05-11	0	no			2026-02-04

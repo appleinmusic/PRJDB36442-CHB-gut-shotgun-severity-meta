@@ -1,0 +1,16 @@
+feature	mean_M	mean_S	delta_S_minus_M
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Escherichia.s__Escherichia_coli	0.024409645228843126	0.12513733599380214	0.10072769076495902
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Phascolarctobacterium.s__Phascolarctobacterium_succinatutens	0.0	0.023102804890875964	0.023102804890875964
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Hungatella.s__Hungatella_hathewayi	0.00425812169941343	0.024541691725334047	0.020283570025920617
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Parasutterella.s__Parasutterella_excrementihominis	0.006842985277166148	0.0247295513971977	0.017886566120031554
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Eubacterium.s__Eubacterium_sp_CAG_38	0.00355444661350913	0.01856186968266081	0.015007423069151682
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Flavonifractor.s__Flavonifractor_plautii	0.005415516388217621	0.019426079460942516	0.014010563072724896
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Streptococcus.s__Streptococcus_thermophilus	0.0	0.013200826892382417	0.013200826892382417
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Roseburia.s__Roseburia_intestinalis	0.019978927812778432	0.030763201431320285	0.010784273618541854
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Enterobacter.s__Enterobacter_bugandensis	0.0	0.009945109507232099	0.009945109507232099
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Alistipes.s__Alistipes_finegoldii	0.003958646276517332	0.013657307923325328	0.009698661646807997
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Ruminococcus.s__Ruminococcus_bicirculans	0.03858294321605736	0.04586502678417275	0.00728208356811539
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Klebsiella.s__Klebsiella_pneumoniae	0.0146823808457461	0.021229501590399782	0.0065471207446536825
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Eubacterium.s__Eubacterium_sp_CAG_252	0.0010347834200587717	0.0071023020327213035	0.006067518612662532
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Butyrivibrio.s__Butyrivibrio_crossotus	0.0	0.0055117605955066155	0.0055117605955066155
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Roseburia.s__Roseburia_faecis	0.035406004549602764	0.04040518681861146	0.004999182269008695

@@ -1,0 +1,9 @@
+feature	mean_M	mean_S	delta_S_minus_M
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Agathobaculum.s__Agathobaculum_butyriciproducens	0.3602422715929046	0.7685665696062853	0.4083242980133807
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Haemophilus.s__Haemophilus_parainfluenzae	0.0	0.026150645675676296	0.026150645675676296
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Haemophilus.s__Haemophilus_sp_HMSC71H05	0.0	0.0036254647867550015	0.0036254647867550015
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Escherichia.s__Escherichia_coli	0.059595397054386906	0.042117034514051105	-0.0174783625403358
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Klebsiella.s__Klebsiella_oxytoca	0.06959304073048458	0.01617710452521149	-0.053415936205273094
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Bifidobacterium.s__Bifidobacterium_adolescentis	0.10132979767078332	0.04400220307740495	-0.05732759459337837
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Klebsiella.s__Klebsiella_aerogenes	0.07671799371008964	0.0	-0.07671799371008964
+PWY-7356: thiamine diphosphate salvage IV (yeast)|g__Klebsiella.s__Klebsiella_pneumoniae	0.33252149924135094	0.09936097781461577	-0.23316052142673516

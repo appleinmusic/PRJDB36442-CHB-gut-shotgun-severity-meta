@@ -1,0 +1,47 @@
+.DS_Store
+
+# Internal tooling (do not publish)
+openspec/
+conductor/
+_dlfx_moved_20260209/
+
+# Large / derived artifacts
+data/**/fastq*.gz
+data/**/fastq
+data/metaphlan_db/
+data/pilot/
+data/metadata/ngdc/*.xlsx
+
+results/**/bowtie2*.bz2
+results/**/merged*.tsv.gz
+results/**/merged*.tsv
+results/cloud/
+results/external/*.xlsx
+results/pilot/
+results/figures/
+results/processed/PRJDB36442_humann/figures/
+
+# Keep canonical processed merges (small; required to reproduce figures)
+!results/processed/PRJDB36442_humann/merged_*.tsv.gz
+!results/processed/PRJDB36442_humann/merged_*.tsv
+
+# Cloud-local notes
+docs/cloud/GCP_INSTANCE.local.md
+
+# Internal writing (not for public repo)
+docs/grant/
+docs/pilot/
+docs/VALUE_ADD_STATEMENT.md
+docs/TEAM_AND_ROLES.md
+docs/REVIEWER_ATTACK_MAP.md
+docs/EXISTING_REVIEWS_LANDSCAPE.md
+docs/HANDOFF_FIGURE_WRITING_BRIEF_20260208_CN.md
+docs/metadata/PRJDB36442_author_request_email.md
+
+# Submission packages (build locally; upload as Release asset if needed)
+plots/submission/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

@@ -1,0 +1,35 @@
+module	feature
+bile_acids	PWY-6518: bile acids epimerization
+tryptophan_indole	PWY-6629: superpathway of L-tryptophan biosynthesis
+tryptophan_indole	TRPSYN-PWY: L-tryptophan biosynthesis
+lps_lipidA	ECASYN-PWY: enterobacterial common antigen biosynthesis
+lps_lipidA	KDO-NAGLIPASYN-PWY: superpathway of (Kdo)2-lipid A biosynthesis
+lps_lipidA	LIPA-CORESYN-PWY: lipid A-core biosynthesis (E. coli K-12)
+lps_lipidA	LPSSYN-PWY: superpathway of lipopolysaccharide biosynthesis
+lps_lipidA	OANTIGEN-PWY: O-antigen building blocks biosynthesis (E. coli)
+lps_lipidA	PWY-7317: superpathway of dTDP-glucose-derived O-antigen building blocks biosynthesis
+lps_lipidA	PWY-7323: superpathway of GDP-mannose-derived O-antigen building blocks biosynthesis
+lps_lipidA	PWY-7328: superpathway of UDP-glucose-derived O-antigen building blocks biosynthesis
+lps_lipidA	PWY-7332: superpathway of UDP-N-acetylglucosamine-derived O-antigen building blocks biosynthesis
+scfa_butyrate	ARGDEG-PWY: superpathway of L-arginine, putrescine, and 4-aminobutanoate degradation
+scfa_butyrate	CENTFERM-PWY: pyruvate fermentation to butanoate
+scfa_butyrate	P163-PWY: L-lysine fermentation to acetate and butanoate
+scfa_butyrate	PWY-5022: 4-aminobutanoate degradation V
+scfa_butyrate	PWY-5130: 2-oxobutanoate degradation I
+scfa_butyrate	PWY-5676: acetyl-CoA fermentation to butanoate II
+scfa_butyrate	PWY-5677: succinate fermentation to butanoate
+scfa_acetate	3-HYDROXYPHENYLACETATE-DEGRADATION-PWY: 4-hydroxyphenylacetate degradation
+scfa_acetate	METH-ACETATE-PWY: methanogenesis from acetate
+scfa_acetate	P163-PWY: L-lysine fermentation to acetate and butanoate
+scfa_acetate	P41-PWY: pyruvate fermentation to acetate and (S)-lactate I
+scfa_acetate	P461-PWY: hexitol fermentation to lactate, formate, ethanol and acetate
+scfa_acetate	PWY-5100: pyruvate fermentation to acetate and lactate II
+scfa_acetate	PWY-5676: acetyl-CoA fermentation to butanoate II
+scfa_acetate	PWY-7254: TCA cycle VII (acetate-producers)
+scfa_acetate	PWY-8086: (S)-lactate fermentation to propanoate, acetate and hydrogen
+scfa_lactate_succinate	P41-PWY: pyruvate fermentation to acetate and (S)-lactate I
+scfa_lactate_succinate	P461-PWY: hexitol fermentation to lactate, formate, ethanol and acetate
+scfa_lactate_succinate	PWY-5100: pyruvate fermentation to acetate and lactate II
+scfa_lactate_succinate	PWY-5677: succinate fermentation to butanoate
+scfa_lactate_succinate	PWY-6641: superpathway of sulfolactate degradation
+scfa_lactate_succinate	PWY-8086: (S)-lactate fermentation to propanoate, acetate and hydrogen

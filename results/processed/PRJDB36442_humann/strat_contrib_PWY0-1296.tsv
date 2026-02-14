@@ -1,0 +1,16 @@
+feature	mean_M	mean_S	delta_S_minus_M
+PWY0-1296: purine ribonucleosides degradation|g__Escherichia.s__Escherichia_coli	0.022907710447969902	0.123445906710558	0.10053819626258809
+PWY0-1296: purine ribonucleosides degradation|g__Hungatella.s__Hungatella_hathewayi	0.01003933857807984	0.05156680985752455	0.041527471279444714
+PWY0-1296: purine ribonucleosides degradation|g__Streptococcus.s__Streptococcus_thermophilus	0.00030665001302024276	0.023083616435052853	0.02277696642203261
+PWY0-1296: purine ribonucleosides degradation|g__Eubacterium.s__Eubacterium_sp_CAG_38	0.0035706290607878726	0.01746753563258888	0.013896906571801006
+PWY0-1296: purine ribonucleosides degradation|g__Roseburia.s__Roseburia_intestinalis	0.024486606331848196	0.03572205633621909	0.011235450004370894
+PWY0-1296: purine ribonucleosides degradation|g__Roseburia.s__Roseburia_faecis	0.03165802933596565	0.04143671229890802	0.009778682962942369
+PWY0-1296: purine ribonucleosides degradation|g__Hungatella.s__Hungatella_effluvii	0.0004883849640845531	0.008500177696847726	0.008011792732763173
+PWY0-1296: purine ribonucleosides degradation|g__Klebsiella.s__Klebsiella_pneumoniae	0.015512776071490224	0.022945110263842636	0.007432334192352412
+PWY0-1296: purine ribonucleosides degradation|g__Enterobacter.s__Enterobacter_bugandensis	0.0	0.00717336775875475	0.00717336775875475
+PWY0-1296: purine ribonucleosides degradation|g__Lachnoclostridium.s__Clostridium_aldenense	0.0049096092483335695	0.010201602216170395	0.005291992967836825
+PWY0-1296: purine ribonucleosides degradation|g__Butyrivibrio.s__Butyrivibrio_crossotus	0.0	0.005136415044224161	0.005136415044224161
+PWY0-1296: purine ribonucleosides degradation|g__Eubacterium.s__Eubacterium_sp_CAG_251	0.004180889969957412	0.008886955307905016	0.004706065337947604
+PWY0-1296: purine ribonucleosides degradation|g__Roseburia.s__Roseburia_sp_CAG_100	0.0003083486277733249	0.004642018518555311	0.004333669890781986
+PWY0-1296: purine ribonucleosides degradation|g__Lachnoclostridium.s__Clostridium_citroniae	0.0007215687839859636	0.005021595107550277	0.0043000263235643136
+PWY0-1296: purine ribonucleosides degradation|g__Roseburia.s__Roseburia_sp_CAG_380	0.0	0.0037239407925793	0.0037239407925793

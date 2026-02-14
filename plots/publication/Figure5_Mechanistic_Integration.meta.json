@@ -1,0 +1,103 @@
+{
+  "figure": "Figure5_Mechanistic_Integration",
+  "panels": [
+    "a:evidence_bridge",
+    "b:driver_transparency",
+    "c:mechanistic_logic_matrix",
+    "d:triangulation_workflow"
+  ],
+  "inputs": {
+    "module_cons": "results/processed/PRJDB36442_humann/module_M_vs_S_stats_conservative.tsv",
+    "mod_dir": "results/external/module_direction_validation.tsv",
+    "path_dir": "results/external/pathway_direction_validation.tsv"
+  },
+  "parameters": {
+    "seed": 20260208,
+    "fdr_threshold": 0.25,
+    "driver_filter": {
+      "rule": "direction_match_bool == True AND q_CHB < 1.0",
+      "sort_by": "-log10(p_CHB)",
+      "top_n": 8,
+      "description": "Select concordant-direction pathways; rank by CHB p; top 12. All exploratory."
+    },
+    "mechanism_map": {
+      "scfa_acetate": {
+        "pathway": "GPR41/43 \u2192 NF-\u03baB modulation",
+        "ref_key": "Koh2016_Cell",
+        "note": "Acetate signals via GPR41/43 in colonocytes; anti-inflammatory"
+      },
+      "scfa_butyrate": {
+        "pathway": "Barrier integrity via HDAC inhibition",
+        "ref_key": "Furusawa2013_Nature",
+        "note": "Butyrate maintains tight junctions and Treg induction"
+      },
+      "scfa_lactate_succinate": {
+        "pathway": "pH modulation + T-cell metabolism",
+        "ref_key": "Louis2017_NatRevMicro",
+        "note": "Succinate/lactate cross-feeding shapes immune milieu"
+      },
+      "tryptophan_indole": {
+        "pathway": "AhR ligand \u2192 IL-22 \u2192 barrier",
+        "ref_key": "Agus2018_CellHostMicrobe",
+        "note": "Indole derivatives activate AhR in gut epithelium"
+      },
+      "lps_lipidA": {
+        "pathway": "TLR4 \u2192 MyD88 \u2192 pro-inflammatory",
+        "ref_key": "Park2009_ImmunolRev",
+        "note": "LPS/lipid-A activates hepatic Kupffer cells via portal vein"
+      },
+      "bile_acids": {
+        "pathway": "FXR/TGR5 axis \u2192 bile homeostasis",
+        "ref_key": "Wahlstrom2016_CellMetab",
+        "note": "Microbial bile acid metabolism modulates host FXR signaling"
+      }
+    },
+    "triangulation_checklist": [
+      {
+        "criterion": "Within-cohort signal",
+        "test": "Mann-Whitney + bootstrap CI",
+        "pass_if": "p<0.05 AND CI excludes 0"
+      },
+      {
+        "criterion": "Definition robustness",
+        "test": "Conservative vs expanded",
+        "pass_if": "Same direction in both"
+      },
+      {
+        "criterion": "External direction",
+        "test": "Cross-cohort delta sign",
+        "pass_if": "Same sign in HBV-LC"
+      },
+      {
+        "criterion": "Mechanistic plausibility",
+        "test": "Literature mapping",
+        "pass_if": "Published mechanism ref exists"
+      },
+      {
+        "criterion": "Multiplicity awareness",
+        "test": "q-value reported",
+        "pass_if": "q + classification stated"
+      }
+    ]
+  },
+  "narrative_constraints": {
+    "discovery_classification": "exploratory / hypothesis-generating",
+    "validation_classification": "direction replication / robustness evidence",
+    "no_post_hoc_selection": true
+  },
+  "inputs_sha256": {
+    "results/processed/PRJDB36442_humann/module_M_vs_S_stats_conservative.tsv": "8c85928c1a1d4a79f33e2a51f0708a49dadf5d4edfc61647df5f4b5e2a956e61",
+    "results/external/module_direction_validation.tsv": "fe74dd3b687d7f5dc8cb843f1b620c9d608f400a9a3755cad42a75f1238b46da",
+    "results/external/pathway_direction_validation.tsv": "507ea8de760437bcc258344f9656e40cb08fca07f3001c0771ff3bc917a1705d"
+  },
+  "output_pdf": "plots/publication/Figure5_Mechanistic_Integration.pdf",
+  "output_png": "plots/publication/Figure5_Mechanistic_Integration.png",
+  "generated_utc": "2026-02-14T06:45:41.884551+00:00",
+  "software": {
+    "python": "3.14.0 (main, Oct  7 2025, 09:34:52) [Clang 17.0.0 (clang-1700.3.19.1)]",
+    "matplotlib": "3.10.8",
+    "pandas": "2.3.3",
+    "numpy": "2.4.0",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O"
+  }
+}

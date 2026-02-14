@@ -1,0 +1,16 @@
+feature	mean_M	mean_S	delta_S_minus_M
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Escherichia.s__Escherichia_coli	0.017832085616153043	0.09354366063862289	0.07571157502246985
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Hungatella.s__Hungatella_hathewayi	0.004549931685744781	0.03239402659709612	0.02784409491135134
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Roseburia.s__Roseburia_intestinalis	0.023261944710181566	0.0480377623609713	0.024775817650789733
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Bacteroides.s__Bacteroides_ovatus	0.0031467676708928586	0.021013996689091895	0.017867229018199038
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Bacteroides.s__Bacteroides_xylanisolvens	0.0020690298413980537	0.019277522685252537	0.017208492843854485
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Bacteroides.s__Bacteroides_caccae	0.006404060240989333	0.019939315082383294	0.013535254841393961
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Eubacterium.s__Eubacterium_sp_CAG_38	0.003433187620961425	0.015963618740111117	0.012530431119149692
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Roseburia.s__Roseburia_faecis	0.030230224294055023	0.04238222073668068	0.012151996442625657
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Ruminococcus.s__Ruminococcus_bicirculans	0.030002210698092238	0.04151775530861317	0.011515544610520935
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Flavonifractor.s__Flavonifractor_plautii	0.0034390627061002053	0.014495788223363539	0.011056725517263333
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Bacteroides.s__Bacteroides_thetaiotaomicron	0.005195850908464463	0.014088986230519511	0.00889313532205505
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Hungatella.s__Hungatella_effluvii	0.00014396576551165932	0.008480338260653027	0.008336372495141369
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Bacteroides.s__Bacteroides_fragilis	0.0016382372168595994	0.009379146494206644	0.0077409092773470444
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Enterobacter.s__Enterobacter_bugandensis	0.0	0.007347994913621836	0.007347994913621836
+GLYCOGENSYNTH-PWY: glycogen biosynthesis I (from ADP-D-Glucose)|g__Anaerostipes.s__Anaerostipes_hadrus	0.004398275787205008	0.011142126715682982	0.006743850928477974
