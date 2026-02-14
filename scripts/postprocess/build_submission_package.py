@@ -131,6 +131,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--out-root", type=Path, default=Path("plots/submission"))
     p.add_argument("--dpi", type=int, default=600)
     p.add_argument("--tag", type=str, default=None, help="Optional package tag (e.g., Medicine).")
+    p.add_argument(
+        "--include-manuscript",
+        action="store_true",
+        help="Include local manuscript Markdown files (kept out of git by default).",
+    )
     return p.parse_args()
 
 
@@ -223,17 +228,18 @@ def main() -> int:
             {"path": str(dst.relative_to(out_dir)), "sha256": _sha256(dst)}
         )
 
-    # ── Manuscript materials (text-only) ─────────────────────────────────
-    for rel in MANUSCRIPT_FILES:
-        src = base_dir / rel
-        if not src.exists():
-            raise FileNotFoundError(f"Missing required manuscript file: {src}")
-        dst = out_manuscript_dir / Path(rel).name
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(src, dst)
-        manifest["included_files"].append(
-            {"path": str(dst.relative_to(out_dir)), "sha256": _sha256(dst)}
-        )
+    # ── Manuscript materials (text-only; optional) ───────────────────────
+    if args.include_manuscript:
+        for rel in MANUSCRIPT_FILES:
+            src = base_dir / rel
+            if not src.exists():
+                raise FileNotFoundError(f"Missing required manuscript file: {src}")
+            dst = out_manuscript_dir / Path(rel).name
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+            manifest["included_files"].append(
+                {"path": str(dst.relative_to(out_dir)), "sha256": _sha256(dst)}
+            )
 
     # ── README for humans ────────────────────────────────────────────────
     readme = f"""# Submission Package (meta/PRJDB36442)
@@ -248,7 +254,7 @@ Generated (UTC): {manifest['generated_utc']}
 - `audit/`: audit inventories (incl. `_input_checksums.json`)
 - `docs/`: figure governance docs (style guide / benchmark / provenance map)
 - `repro/`: reproducibility bundle (artifact hashes + env snapshot + report)
-- `manuscript/`: draft submission text (Markdown)
+    - `manuscript/`: local draft text (optional; not tracked by git)
 
 ## Notes
     - `_input_checksums.json` lists SHA-256 checksums for the canonical input tables used by the figure generator.

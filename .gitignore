@@ -4,6 +4,7 @@
 openspec/
 conductor/
 _dlfx_moved_20260209/
+manuscript/
 
 # Large / derived artifacts
 data/**/fastq*.gz
