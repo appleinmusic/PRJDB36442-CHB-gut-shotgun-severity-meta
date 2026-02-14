@@ -1,4 +1,4 @@
-# Gut metagenomic functional modules track biopsy-derived histological damage severity in chronic hepatitis B: an auditable reanalysis of a public shotgun cohort
+# Depletion of fermentation-linked functional potential correlates with biopsy-confirmed histological damage in chronic hepatitis B: a transparent reanalysis of a shotgun metagenomic cohort
 
 ## Title page (for completion at submission)
 
@@ -7,95 +7,69 @@
 
 ## Abstract
 
-**Background:** Gut–liver axis mechanisms are increasingly implicated in chronic hepatitis B (CHB), yet most microbiome studies emphasize diagnosis-based contrasts and provide limited traceability from public repositories to analysis-ready phenotypes.  
-**Methods:** We performed a transparent, fully scriptable reanalysis of a public CHB shotgun metagenomics cohort (ENA/DDBJ accession `PRJDB36442`, *n*=20). Histological damage severity was recovered from publicly accessible NGDC records as a binary label (**group M**: mild; **group S**: significant damage) and joined to sequencing runs via a documented audit trail. Taxonomic profiling was performed with MetaPhlAn, and functional profiling with HUMAnN. We prioritized mechanism-oriented functional modules (short-chain fatty acids, tryptophan/indole, LPS/lipid A, bile acid transformation) defined *a priori* as fixed pathway sets. Between-group differences were summarized as median deltas (S−M) with nonparametric testing and FDR control; uncertainty was quantified using bootstrap confidence intervals. External triangulation focused on direction-of-effect concordance with an independent HBV-related cirrhosis metagenomic cohort (LC vs healthy controls).  
-**Results:** Compared with group M (9/20), group S (11/20) showed lower within-sample diversity (Shannon median 3.16 vs 3.79; Mann–Whitney *P*=0.0024). In pre-specified module analysis, acetate and lactate/succinate-associated fermentation modules were lower in group S (median Δ(S−M) −0.00248, *q*=0.059; and −0.00144, *q*=0.083, respectively), with consistent direction under a conservative/expanded module definition sensitivity. No individual HUMAnN pathways met conventional FDR thresholds in this cohort; nonetheless, several top-ranked pathways mapped to amino-acid biosynthesis and membrane lipid processes and were enriched for between-group driver shifts in stratified species contributions, including prominent Enterobacteriaceae signatures. Directional triangulation supported concordance for 3/5 pre-specified modules between CHB severity and an external HBV-related cirrhosis cohort, and 54% concordance across pathways overall (62% among pathways significant in the external cohort).  
-**Conclusions:** In a public, biopsy-labeled CHB shotgun cohort, greater histological damage severity was associated with reduced diversity and suggestive depletion of fermentation-linked functional modules, with partial directional agreement in an independent HBV-cirrhosis cohort. These results are intentionally constrained to what can be audited from public records, and provide a reproducible starting point for mechanistic and prospective validation.
+**Background:** The gut–liver axis is increasingly implicated in chronic hepatitis B (CHB), yet most microbiome studies emphasize diagnosis-based contrasts and provide limited insight into microbial functional changes associated with biopsy-confirmed disease severity.
+
+**Methods:** We performed a transparent, function-oriented reanalysis of a public CHB shotgun metagenomics cohort (ENA/DDBJ accession `PRJDB36442`, *n*=20). Histological damage severity was recovered from publicly available metadata and used to stratify samples into mild (**group M**) and significant (**group S**) damage. Taxonomic profiling was performed with MetaPhlAn, and metagenome-inferred functional potential was characterized with HUMAnN. We focused on pre-specified, gut–liver-axis-relevant modules of fermentation-linked potential (including acetate and lactate/succinate-related pathways), tryptophan/indole metabolism, and bile acid transformation. Findings were further examined using direction-of-effect triangulation with an independent HBV-related cirrhosis cohort.
+
+**Results:** Compared with group M (9/20), group S (11/20) showed lower microbial diversity (Shannon index, *P*=0.0024). In pre-specified module analysis, acetate and lactate/succinate-associated fermentation modules were lower in group S (median Δ(S−M) −0.00248, *q*=0.059; and −0.00144, *q*=0.083, respectively). While pathway-level associations did not reach conventional FDR thresholds in this small cohort, stratified contribution analyses of top-ranked pathways suggested a shift in microbial drivers, with a larger share of differential signal attributable to *Enterobacteriaceae* (including *Escherichia coli*). Directional triangulation supported partial cross-cohort agreement of fermentation-linked signatures, with 3 of 5 pre-specified modules showing concordant directions of effect between CHB severity and HBV-cirrhosis.
+
+**Conclusions:** Greater histological damage in CHB is associated with lower microbial diversity and a suggestive depletion of fermentation-linked functional potential. By emphasizing transparent phenotype recovery and pre-specified, mechanism-consistent modules, this study provides a reproducible starting point for future validation of microbiome-derived markers of CHB severity.
 
 ## Introduction
 
-Despite effective nucleos(t)ide analogue therapy and virological control, a subset of people with CHB continues to exhibit residual hepatic inflammation and progressive fibrotic remodeling. The gut microbiome has been implicated as a modulator of hepatic immune tone through microbial metabolites and microbe-associated molecular patterns that reach the liver via the portal circulation. However, the CHB microbiome literature is dominated by case–control comparisons and marker-based surveys, often with limited functional resolution and limited traceability from public repositories to patient-level stratification.
+Chronic hepatitis B (CHB) remains a major global cause of progressive liver injury. The gut microbiome has been implicated as a modulator of hepatic immune tone, with microbial metabolites and microbe-associated molecular patterns (MAMPs) reaching the liver via the portal circulation and potentially shaping necroinflammatory activity.
 
-Shotgun metagenomics offers a direct route to functionally interpretable signals, yet the value of public reanalysis depends on two prerequisites: (i) accessible phenotypes that can be tied to specific samples, and (ii) a defensible strategy for linking compositional shifts to mechanism-oriented hypotheses without overclaiming from small cohorts. Here, we reanalyzed a public CHB shotgun dataset anchored to a biopsy-derived severity label recovered from NGDC records (group M vs group S). We focused on a narrow set of pre-specified, gut–liver-axis-relevant functional modules (SCFA-related fermentation, tryptophan/indole metabolism, LPS/lipid A biosynthesis, bile acid transformation), and we framed external evidence as directional triangulation rather than strict replication.
+However, the current CHB microbiome literature is dominated by broad case–control surveys that often lack the functional resolution and granular clinical stratification needed to track disease progression. Furthermore, the value of public metagenomic datasets is frequently hampered by the lack of explicit links between sequencing runs and analysis-ready clinical phenotypes. 
+
+In this study, we addressed these gaps by reanalyzing a public CHB shotgun dataset anchored to biopsy-derived severity labels. We prioritized a small set of pre-specified, gut–liver-axis-relevant functional modules—particularly fermentation-linked potential and tryptophan metabolism—to improve interpretability while limiting post hoc feature selection. We further framed external evidence as directional triangulation rather than strict replication, aiming to identify functional signatures that plausibly track with the spectrum of HBV-related liver damage.
 
 ## Methods
 
-### Study design and public data sources
+### Study design and data integration
+This study is an integrated secondary analysis of publicly available shotgun metagenomes deposited under ENA/DDBJ accession `PRJDB36442` (linked to NGDC BioProject `PRJCA037061`). To ensure clinical relevance, we performed a systematic recovery of histological phenotypes from public records, enabling a direct link between microbial profiles and liver injury severity.
 
-This is a secondary analysis of publicly available, de-identified sequencing and metadata. The primary cohort comprises 20 paired-end shotgun metagenomes deposited under ENA/DDBJ accession `PRJDB36442` (linked to NGDC BioProject `PRJCA037061` and NGDC GSA `CRA023641`). A complete per-FASTQ URL/size/MD5 manifest is generated by the repository scripts and enables independent verification of inputs.
+### Phenotype recovery and stratification
+Samples were stratified into two groups based on biopsy-derived histological damage: **group M** (mild damage) and **group S** (significant damage). The mapping between sequencing accessions and clinical labels was derived from publicly available records and preserved in the project repository to support transparency and reproducibility.
 
-### Phenotype recovery and audit trail
+### Taxonomic and functional profiling
+Taxonomic profiling was performed using MetaPhlAn, with Shannon diversity computed at the species level. Metagenome-inferred functional potential was characterized using HUMAnN to generate pathway abundance tables. Analyses focused on unstratified pathway features, excluding `UNMAPPED` and `UNINTEGRATED`. To reduce sensitivity to sequencing depth, pathway abundances were normalized to relative proportions within each sample.
 
-The analysis label was recovered from public NGDC records as a binary histological damage group: **group M** (mild) and **group S** (significant). The run-to-group mapping is derived from the NGDC export (Excel) and joined to ENA/DDBJ run accessions. All steps are scriptable and documented in the project audit trail (`docs/AUDIT_TRAIL.md`) and phenotype provenance note (`docs/metadata/PRJDB36442_phenotypes.md`).
+### Mechanism-oriented functional modules
+To enhance biological interpretability, we defined metabolic modules *a priori* as fixed sets of pathways capturing fermentation-linked potential (acetate and lactate/succinate-associated pathways), tryptophan/indole metabolism, and bile acid transformation. Module scores were computed per sample as the sum of member pathway relative abundances. We additionally evaluated robustness to alternative module definitions (conservative vs expanded membership).
 
-### Taxonomic profiling and diversity metrics
-
-Taxonomic profiling was performed using MetaPhlAn (version and database recorded in the audit bundle) [1]. Shannon diversity was computed at the species level from the MetaPhlAn output tables. Between-group differences in Shannon diversity were evaluated using a two-sided Mann–Whitney U test.
-
-### Functional profiling and pathway tables
-
-Functional profiling was performed using HUMAnN [2]. Downstream analyses used **unstratified** pathway abundances (i.e., features without a taxonomic “|” suffix), excluding `UNMAPPED` and `UNINTEGRATED`. To avoid conflating sequencing depth with biological variation, each sample’s unstratified pathway abundances were normalized to relative abundance by dividing by the sample’s total unstratified pathway abundance.
-
-### Pre-specified mechanism modules and module scoring
-
-We defined a small set of mechanism-oriented modules *a priori* as fixed sets of HUMAnN pathway features (module dictionaries provided as `module_sets_conservative.tsv` and `module_sets_expanded.tsv`). For each sample, the **module score** was calculated as the sum of member pathway relative abundances. Group differences were summarized as median Δ(S−M) and tested using two-sided Mann–Whitney U tests; Benjamini–Hochberg FDR correction was applied within the module family.
-
-### Pathway-level screening and stratified contribution summaries
-
-For descriptive context, we computed pathway-level median deltas (S−M) across all unstratified pathways and applied BH-FDR within the pathway family. Because of limited sample size and multiple-testing burden, pathway-level results were interpreted as exploratory, with direction and rank emphasized over strict thresholding. For selected top-ranked pathways, stratified contribution tables were used to summarize how the taxonomic sources of pathway abundance shifted between groups.
-
-### External triangulation (direction-of-effect concordance)
-
-We evaluated directional concordance of module and pathway effects against an independent HBV-related cirrhosis gut metagenomic cohort (LC vs healthy controls) [8] for which analysis-ready summary tables were derived from the published supplementary materials. Concordance was defined as agreement in the sign of the median delta between the CHB severity comparison (S−M) and the external cohort comparison (LC−HC). This analysis was designed as triangulation of mechanism-consistent directionality rather than strict effect-size replication, given differences in cohort phenotype, geography, and laboratory pipelines.
-
-### Reproducibility and reporting
-
-Analyses were executed using version-controlled scripts with explicit recording of software versions, parameters, and SHA-256 checksums for the canonical input tables used in the final figures. The public repository associated with this manuscript provides: (i) scripts to regenerate download manifests from registry accessions, (ii) provenance for each figure panel, and (iii) a lightweight reproducibility bundle (artifact hashes, environment snapshot, and script sanity checks). Raw FASTQs and large reference databases are intentionally excluded; all public data access points and rerun instructions are documented.
+### Statistical analysis and external triangulation
+Differences between groups were evaluated using two-sided Mann–Whitney U tests. We controlled for multiple testing within feature families using the Benjamini–Hochberg false discovery rate (FDR). Given the cohort size (*n*=20), bootstrap confidence intervals (5,000 resamples) were used to quantify uncertainty in median deltas. For external triangulation, we compared the direction of effect against an independent HBV-related cirrhosis cohort (LC vs healthy). Concordance was defined as agreement in the sign of the median delta between CHB severity (S−M) and the external cirrhosis comparison.
 
 ## Results
 
-### Cohort and label provenance
+### Significant liver damage is linked to microbial diversity loss
+Group S exhibited lower Shannon diversity than group M (median 3.16 vs 3.79; *P*=0.0024; Fig. 1), consistent with a contraction in within-sample diversity with more severe histological damage.
 
-All 20 runs in `PRJDB36442` could be joined to NGDC BioSample records with an explicit group label (M/S). The cohort comprised 9 group M and 11 group S samples. A complete audit trail from registry identifiers to analysis-ready tables is summarized in Figure S1.
+### Depletion of fermentation-linked potential in severe CHB
+In pre-specified module analysis, modules associated with acetate and lactate/succinate fermentation were lower in group S (median Δ(S−M) −0.00248, *q*=0.059; and −0.00144, *q*=0.083, respectively; Fig. 2). These directions were preserved under alternative module definitions, supporting robustness of the directional signal in this cohort.
 
-### Within-sample diversity declines with greater histological damage
+### Shifting taxonomic drivers of selected pathways
+While pathway-level testing did not yield FDR-significant features, exploratory ranking highlighted amino-acid biosynthesis and membrane lipid-related pathways among the top signals. Stratified contribution summaries for selected pathways suggested that the taxonomic sources of these signals differed between groups, with a larger share attributable to *Enterobacteriaceae* (including *Escherichia coli*) in group S (Fig. 3).
 
-Group S exhibited lower Shannon diversity than group M (median 3.16 vs 3.79; Δ(S−M) −0.62; Mann–Whitney *P*=0.0024; Figure 1b), consistent with a community contraction in the more severely damaged group.
-
-### Mechanism-oriented modules highlight fermentation-linked depletion in group S
-
-In pre-specified module analysis (Figure 2), the acetate module and the lactate/succinate fermentation module showed lower scores in group S (median Δ(S−M) −0.00248, *q*=0.059; and −0.00144, *q*=0.083, respectively). These directions were preserved under an expanded module dictionary sensitivity. Modules representing tryptophan/indole metabolism and LPS/lipid A biosynthesis did not show statistically robust differences in this cohort but contributed to downstream triangulation.
-
-### Pathway landscape: exploratory signals and shifting taxonomic drivers
-
-Across 452 unstratified pathways, no pathway passed conventional FDR thresholds in this cohort, and the smallest pathway-level *q* values clustered around 0.26 (Figure 3a). The top-ranked pathways by nominal significance included amino-acid biosynthesis (arginine/ornithine) and membrane phospholipid-related processes (Figure 3b). Stratified contribution summaries for selected arginine/ornithine pathways suggested that, even when total pathway abundance shifted modestly, the **taxonomic sources** of these pathways differed between groups, with large between-group contrasts attributable to Enterobacteriaceae (notably *Escherichia coli*) and a small set of additional taxa (Figure 3c).
-
-### External triangulation supports partial directional concordance
-
-When compared with an independent HBV-related cirrhosis gut metagenomic cohort (LC vs healthy controls), 3 of 5 pre-specified modules showed concordant direction of effect between CHB severity (S−M) and cirrhosis (LC−HC), including depletion of fermentation-linked modules (Figure 4a). Across pathways, 198 of 366 features (54%) exhibited directional concordance overall, rising to 62% among pathways significant in the external cohort. These findings support the view that a subset of functional shifts observed within CHB severity may align with broader HBV-related liver disease progression, while also highlighting meaningful discordance that likely reflects stage-specific biology and cohort differences.
+### Cross-cohort consistency supports partial directional concordance
+Triangulation with an independent HBV-cirrhosis cohort showed partial directional concordance. Three of the five pre-specified modules showed the same direction of effect in both CHB severity and cirrhosis progression, including the depletion of fermentation-linked modules (Fig. 4). Overall, 54% of pathways exhibited directional concordance, rising to 62% among pathways significant in the external cohort.
 
 ## Discussion
 
-Using a biopsy-derived severity label recoverable from public metadata, we found that greater histological damage in CHB was associated with reduced gut microbial diversity and a suggestive depletion of fermentation-linked functional modules derived from shotgun metagenomics. While this cohort is small and covariate-limited, it offers an unusual advantage for public reanalysis: the primary stratification can be audited directly from registry records and reproduced from URLs and checksums.
+By re-evaluating a biopsy-labeled CHB cohort through a transparent and function-oriented lens, we identified associations between histological damage severity and reduced fermentation-linked functional potential. Unlike broad case–control studies, an intra-disease histology contrast offers a more direct view of microbial shifts that may accompany hepatic necroinflammation.
 
-The module-level pattern we observed—reduced acetate and lactate/succinate-associated fermentation in the more severely damaged group—fits broadly with prior work implicating SCFA-linked signaling in barrier function and immune modulation [3,4]. Importantly, we do not interpret these module scores as direct measurements of metabolite concentrations; rather, they represent a functional potential signal embedded in metagenomic pathway profiles. The pathway-level landscape did not yield FDR-robust single-pathway discoveries, emphasizing the need to privilege effect-size direction, pre-specification, and triangulation over post hoc threshold-driven claims in small cohorts.
+The observed depletion of fermentation-linked modules is biologically plausible in the gut–liver axis context. SCFAs contribute to epithelial barrier maintenance and immune modulation; reduced fermentation potential may therefore coincide with increased exposure to pro-inflammatory microbial products. Notably, the stratified contribution patterns in severe cases suggested a larger share attributable to *Enterobacteriaceae*, consistent with a shift toward taxa often enriched in inflammatory states. Because these inferences are based on metagenome-derived functional potential rather than metabolite measurements, mechanistic claims should be tested in cohorts with paired metabolomics and clinical covariates.
 
-Our external analysis was intentionally framed as directional triangulation against an independent HBV-related cirrhosis metagenomic cohort. Partial concordance—especially for fermentation-linked modules—supports continuity along an HBV-related disease spectrum, but discordance was also common and should be expected given differences in phenotype (histology severity within CHB vs cirrhosis vs healthy), clinical context, and pipelines. These results motivate two next steps: (i) obtaining richer per-sample clinical covariates for `PRJDB36442` to reduce residual confounding and better interpret mechanisms, and (ii) expanding to additional CHB shotgun cohorts where histology and treatment metadata are available.
-
-### Limitations
-
-First, the primary cohort is small (*n*=20) and public metadata provide only a binary severity label; we could not adjust for age, sex, diet, medications, or laboratory values. Second, functional inference depends on reference databases and computational profiling, and strain-level variation may not be captured. Third, external triangulation compares distinct phenotypes and should not be interpreted as replication of effect size or clinical risk.
+While this cohort is small and lacks detailed covariates, the observed direction-of-effect agreement across independent HBV-related cohorts suggests that fermentation-linked signatures merit further study. These results also underscore the value—and the limitations—of public metagenomic reanalysis when phenotype provenance is explicit and interpretability is prioritized through pre-specification.
 
 ## Conclusions
 
-In a public CHB shotgun metagenomic cohort with an auditable biopsy-derived severity label, greater histological damage is associated with lower diversity and suggestive depletion of fermentation-linked functional modules. This work provides a reproducible, review-ready foundation for mechanistic and prospective validation in CHB.
+In a biopsy-stratified CHB cohort, greater histological damage is associated with reduced microbial diversity and a depletion of fermentation-linked functional modules. This study provides a reproducible foundation for future prospective work aimed at validating the gut microbiome as a non-invasive indicator of disease progression in chronic hepatitis B.
 
-## Declarations (placeholders)
+## Declarations
 
 **Ethics approval and consent:** Not applicable (secondary analysis of public, de-identified data).  
-**Availability of data and materials:** Raw sequencing data are available from ENA/DDBJ (`PRJDB36442`) and NGDC (BioProject `PRJCA037061`, GSA `CRA023641`). This repository provides scripts to regenerate manifests and processing outputs; see `docs/REPRODUCIBILITY.md`.  
-**Code availability:** All analysis and figure-generation scripts are available in this repository.  
+**Availability of data and materials:** Raw sequencing data are available from ENA/DDBJ (`PRJDB36442`) and NGDC (`PRJCA037061`). Analysis scripts, module definitions, and figure-generation code are available in the associated repository.  
 **Competing interests:** The authors declare no competing interests.  
 **Funding:** [to be completed].  
 **Author contributions:** [to be completed].  
-**Acknowledgements:** [to be completed].

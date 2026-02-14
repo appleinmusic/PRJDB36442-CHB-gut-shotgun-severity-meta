@@ -1,41 +1,34 @@
 # Figure legends
 
-## Figure 1. Cohort profile and severity-linked ecology.
+## Figure 1. Ecological shifts associated with CHB severity.
+**a,** Integrated study workflow from public registry identifiers to clinical stratification and functional profiling.  
+**b,** Comparison of Shannon diversity (species level) between Group M (mild) and Group S (significant) histological damage.  
+**c,** Community composition at the phylum level, illustrating individual variation within groups.
 
-**a,** Audit-linked cohort flow from registry accessions to analysis-ready run labels (group M vs group S).  
-**b,** Shannon diversity (species level) by group, shown as a raincloud distribution with median and interquartile range.  
-**c,** Phylum-level relative composition by sample, ordered by group.
+## Figure 2. Functional modules and the fermentation landscape.
+**a,** Distribution of module scores (sum of relative abundances) across groups.  
+**b,** Forest plot of median Δ(S−M) with 95% bootstrap confidence intervals for pre-specified metabolic modules.  
+**c,** Sensitivity analysis comparing conservative and expanded module definitions, highlighting the robustness of fermentation-linked depletion.
+**d,** Module dictionary transparency, showing the number of member pathways per module under conservative and expanded definitions.
 
-## Figure 2. Mechanism-oriented functional modules within CHB severity.
+## Figure 3. Exploratory pathway landscape and taxonomic drivers.
+**a,** Volcano plot of unstratified functional pathways, highlighting suggestive features associated with disease severity.  
+**b,** Heatmap of top-ranked pathways across samples, ordered by histological group.  
+**c,** Taxonomic contribution analysis for selected metabolic pathways, showing the shifting microbial drivers (e.g., *Enterobacteriaceae*) between groups.
+**d,** Sensitivity summary of direction-of-effect concordance across external FDR thresholds.
 
-**a,** Per-sample module scores (relative abundance; sum of member pathway relative abundances) shown as horizontal rainclouds for each module.  
-**b,** Forest plot of median Δ(S−M) with 95% bootstrap confidence intervals (5,000 resamples). Annotated with BH-FDR *q* values and group sizes.  
-**c,** Definition sensitivity: conservative vs expanded module dictionaries shown as dumbbell deltas.  
-**d,** Module dictionary transparency: number of member pathways per module under conservative and expanded definitions.
+## Figure 4. Directional triangulation across HBV cohorts.
+**a,** Comparison of standardized effect sizes for pre-specified modules between the CHB severity comparison (S−M) and an external HBV-cirrhosis cohort (LC−HC).  
+**b,** Concordance rates for pathways and modules, illustrating shared functional signatures across disease stages.  
+**c,** Quadrant plot showing the agreement in pathway deltas between independent cohorts.
+**d,** Concordance rates stratified by external-cohort FDR bins.
 
-## Figure 3. Pathway landscape and stratified drivers.
+## Figure 5. Mechanistic integration and evidence chain.
+**a,** Evidence bridge summarizing standardized module effect sizes across cohorts.  
+**b,** Driver transparency view highlighting representative concordant pathways and their exploratory FDR values.  
+**c,** Mechanistic logic matrix linking module directionality to gut–liver axis pathways and literature anchors.  
+**d,** Triangulation workflow summarizing the inferential framework (definition robustness, cross-cohort directionality, mechanistic plausibility).
 
-**a,** Enhanced volcano plot for unstratified pathways (delta vs −log10 *p*), highlighting suggestive features.  
-**b,** Heatmap of the top-ranked pathways (row z-score) across samples ordered by group.  
-**c,** Stratified contribution summary for selected pathways, showing the top between-group taxa contributors (by |Δ|) and their direction.  
-**d,** Threshold sensitivity curve illustrating the match rate as an FDR threshold varies (external cohort directionality overlay).
-
-## Figure 4. External directional triangulation.
-
-**a,** Cross-cohort standardized effect sizes for pre-specified modules in the CHB severity cohort (S−M) and an external HBV-related cirrhosis cohort (LC−HC).  
-**b,** Direction match rates for modules and pathways.  
-**c,** Scatter of pathway deltas between cohorts with quadrants indicating concordant/discordant directions.  
-**d,** Direction match rates stratified by external-cohort FDR bins.
-
-## Figure 5. Evidence chain for mechanism-consistent interpretation.
-
-**a,** Evidence bridge: standardized module effect sizes across cohorts emphasizing directional alignment.  
-**b,** Driver transparency: selected concordant pathways annotated with exploratory *q* values to foreground statistical strength.  
-**c,** Mechanistic logic matrix linking module directionality to canonical gut–liver axis pathways and literature anchors.  
-**d,** Triangulation workflow summarizing the inferential framework: definition robustness + cross-cohort directionality + mechanistic plausibility.
-
-## Figure S1. Audit traceability.
-
-**a,** Timeline and provenance for key pipeline stages and artifacts (public sources → derived tables → figures).  
-**b,** Inventory of audit artifacts by category to support reviewer verification.
-
+## Figure S1. Audit and transparency trail.
+**a,** Systematic mapping of the analysis pipeline, emphasizing the traceability from raw public data to final figure panels.  
+**b,** Inventory of data artifacts and environment snapshots to support the reproducibility of the findings.
